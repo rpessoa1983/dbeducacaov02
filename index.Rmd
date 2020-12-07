@@ -66,7 +66,6 @@ ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
     x = "Ano",
     y = "Nº"
   ) +
-  ylim(0,3000)+
   theme(title = element_text(size = 12,colour = "#db4470"))+
     theme(axis.title.x=element_text(size=22)) +
     theme(axis.title.y=element_text(size=22)) +
@@ -107,7 +106,6 @@ ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
     x = "Ano",
     y = "Nº"
   ) +
-  ylim(0,3000)+
   theme(title = element_text(size = 12,colour = "#db4470"))+
     theme(axis.title.x=element_text(size=22)) +
     theme(axis.title.y=element_text(size=22)) +
@@ -148,7 +146,6 @@ ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
     x = "Ano",
     y = "Nº"
   ) +
-  ylim(0,3000)+
   theme(title = element_text(size = 12,colour = "#db4470"))+
     theme(axis.title.x=element_text(size=22)) +
     theme(axis.title.y=element_text(size=22)) +
@@ -189,7 +186,6 @@ ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
     x = "Ano",
     y = "Nº"
   ) +
-  ylim(0,3000)+
   theme(title = element_text(size = 12,colour = "#db4470"))+
     theme(axis.title.x=element_text(size=22)) +
     theme(axis.title.y=element_text(size=22)) +
@@ -231,7 +227,6 @@ ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
     x = "Ano",
     y = "Nº"
   ) +
-  ylim(0,3000)+
   theme(title = element_text(size = 12,colour = "#db4470"))+
     theme(axis.title.x=element_text(size=22)) +
     theme(axis.title.y=element_text(size=22)) +
@@ -273,7 +268,6 @@ ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
     x = "Ano",
     y = "Nº"
   ) +
-  ylim(0,3000)+
   theme(title = element_text(size = 12,colour = "#db4470"))+
     theme(axis.title.x=element_text(size=22)) +
     theme(axis.title.y=element_text(size=22)) +
@@ -314,7 +308,46 @@ ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
     x = "Ano",
     y = "Nº"
   ) +
-  ylim(0,3000)+
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+    theme(axis.title.x=element_text(size=22)) +
+    theme(axis.title.y=element_text(size=22)) +
+  theme(legend.text = element_text(size = 22)) +
+    theme(axis.text = element_text(size = 22))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue", 
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))
+  
+     #theme(plot.background = element_rect(fill = "#db4470"))
+  
+  #scale_color_ipsum() +
+  #theme_ipsum_rc()
+  #theme_minimal(base_family = "Roboto Condensed") +
+  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
+  #guides(fill = guide_legend(reverse = TRUE))
+ggplotly(objeto)
+
+```
+
+Total
+================================
+
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino** </font>
+
+```{r, eval=TRUE, fig.height=4, fig.width=3}
+
+objeto <- CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
+ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
     theme(axis.title.x=element_text(size=22)) +
     theme(axis.title.y=element_text(size=22)) +
