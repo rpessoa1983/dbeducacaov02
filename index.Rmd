@@ -49,7 +49,7 @@ CONCLUINTES_SSA <- CENSO_SUP %>% filter(IN_CONCLUINTE==1)
 
 O número de concluintes do sexo masculino (biológico - definição IBGE) 
 desagregado por raça/cor (definição IBGE) está disponível no gráfico 
-de barras ao lado.
+de barras.
 
 Preta
 ================================
