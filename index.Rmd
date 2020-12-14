@@ -45,6 +45,7 @@ CONCLUINTES_SSA <- CENSO_SUP %>% filter(IN_CONCLUINTE==1)
 
 ```
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 O número de concluintes do sexo masculino (biológico - definição IBGE) 
 desagregado por raça/cor (definição IBGE) está disponível no gráfico 
@@ -115,7 +116,7 @@ CONCLUINTES_SSA %>%
 
 ```
 
-Preta+Parda {.mobile}
+Preta+Parda
 ================================
 ### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Preta+Parda** </font>
 
