@@ -38,12 +38,10 @@ window.FlexDashboardComponents = [];
 <link href="site_libs/prism-1.4.1/prism.css" rel="stylesheet" />
 <script src="site_libs/prism-1.4.1/prism.js"></script>
 <script src="site_libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
-<script src="site_libs/plotly-binding-4.9.2.1/plotly.js"></script>
-<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="site_libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
-<script src="site_libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
-<link href="site_libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="site_libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+<script src="site_libs/echarts4r-4.8.0/echarts-en.min.js"></script>
+<script src="site_libs/echarts4r-4.8.0/ecStat.min.js"></script>
+<script src="site_libs/echarts4r-4.8.0/dataTool.min.js"></script>
+<script src="site_libs/echarts4r-binding-0.3.3/echarts4r.js"></script>
 <style type="text/css">
 
 /*
@@ -2632,101 +2630,101 @@ window.FlexDashboardComponents.push({
 <p>O número de concluintes do sexo masculino (biológico - definição IBGE) desagregado por raça/cor (definição IBGE) está disponível no gráfico de barras.</p>
 <div id="preta" class="section level1">
 <h1>Preta</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor-preta" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Preta</strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor---preta" class="section level3">
+<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Preta</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-08537e2fb4d98adce865" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-08537e2fb4d98adce865">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[299,449,556,734,784,1024,1134,1434,1469,1938],"text":["ANO_CENSO_SUP: 2009<br />value:  299","ANO_CENSO_SUP: 2010<br />value:  449","ANO_CENSO_SUP: 2011<br />value:  556","ANO_CENSO_SUP: 2012<br />value:  734","ANO_CENSO_SUP: 2013<br />value:  784","ANO_CENSO_SUP: 2014<br />value: 1024","ANO_CENSO_SUP: 2015<br />value: 1134","ANO_CENSO_SUP: 2016<br />value: 1434","ANO_CENSO_SUP: 2017<br />value: 1469","ANO_CENSO_SUP: 2018<br />value: 1938"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":98.6301369863014},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-96.9,2034.9],"tickmode":"array","ticktext":["0","500","1000","1500","2000"],"tickvals":[0,500,1000,1500,2000],"categoryorder":"array","categoryarray":["0","500","1000","1500","2000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"38035168f602":{"x":{},"y":{},"type":"bar"}},"cur_data":"38035168f602","visdat":{"38035168f602":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cc86c438189a6b12620f" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cc86c438189a6b12620f">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009"," 501"]},{"value":["2010"," 710"]},{"value":["2011"," 847"]},{"value":["2012","1158"]},{"value":["2013","1178"]},{"value":["2014","1582"]},{"value":["2015","1813"]},{"value":["2016","2207"]},{"value":["2017","2342"]},{"value":["2018","3031"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Total"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="parda" class="section level1">
 <h1>Parda</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor-parda" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Parda</strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor---parda" class="section level3">
+<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Parda</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-d07e9697fa2f46b61ffb" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d07e9697fa2f46b61ffb">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[1737,2091,1901,2741,2665,3132,3750,3451,4465,5256],"text":["ANO_CENSO_SUP: 2009<br />value: 1737","ANO_CENSO_SUP: 2010<br />value: 2091","ANO_CENSO_SUP: 2011<br />value: 1901","ANO_CENSO_SUP: 2012<br />value: 2741","ANO_CENSO_SUP: 2013<br />value: 2665","ANO_CENSO_SUP: 2014<br />value: 3132","ANO_CENSO_SUP: 2015<br />value: 3750","ANO_CENSO_SUP: 2016<br />value: 3451","ANO_CENSO_SUP: 2017<br />value: 4465","ANO_CENSO_SUP: 2018<br />value: 5256"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":98.6301369863014},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-262.8,5518.8],"tickmode":"array","ticktext":["0","1000","2000","3000","4000","5000"],"tickvals":[0,1000,2000,3000,4000,5000],"categoryorder":"array","categoryarray":["0","1000","2000","3000","4000","5000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"380337b28026":{"x":{},"y":{},"type":"bar"}},"cur_data":"380337b28026","visdat":{"380337b28026":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7217c5e16bd7e7622f14" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7217c5e16bd7e7622f14">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009","2936"]},{"value":["2010","3309"]},{"value":["2011","2900"]},{"value":["2012","4198"]},{"value":["2013","3940"]},{"value":["2014","4824"]},{"value":["2015","5681"]},{"value":["2016","5239"]},{"value":["2017","6731"]},{"value":["2018","7933"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Total"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="pretaparda" class="section level1">
 <h1>Preta+Parda</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor-preta-parda" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Preta + Parda</strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor---pretaparda" class="section level3">
+<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Preta+Parda</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-3096ac6bd0bd56b292e3" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3096ac6bd0bd56b292e3">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[2036,2540,2457,3475,3449,4156,4884,4885,5934,7194],"text":["ANO_CENSO_SUP: 2009<br />value: 2036","ANO_CENSO_SUP: 2010<br />value: 2540","ANO_CENSO_SUP: 2011<br />value: 2457","ANO_CENSO_SUP: 2012<br />value: 3475","ANO_CENSO_SUP: 2013<br />value: 3449","ANO_CENSO_SUP: 2014<br />value: 4156","ANO_CENSO_SUP: 2015<br />value: 4884","ANO_CENSO_SUP: 2016<br />value: 4885","ANO_CENSO_SUP: 2017<br />value: 5934","ANO_CENSO_SUP: 2018<br />value: 7194"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":98.6301369863014},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-359.7,7553.7],"tickmode":"array","ticktext":["0","2000","4000","6000"],"tickvals":[0,2000,4000,6000],"categoryorder":"array","categoryarray":["0","2000","4000","6000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"380369608212":{"x":{},"y":{},"type":"bar"}},"cur_data":"380369608212","visdat":{"380369608212":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7e2c6520f152abf4bbb0" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7e2c6520f152abf4bbb0">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009"," 3437"]},{"value":["2010"," 4019"]},{"value":["2011"," 3747"]},{"value":["2012"," 5356"]},{"value":["2013"," 5118"]},{"value":["2014"," 6406"]},{"value":["2015"," 7494"]},{"value":["2016"," 7446"]},{"value":["2017"," 9073"]},{"value":["2018","10964"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Total"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="branca" class="section level1">
 <h1>Branca</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor-branca" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Branca</strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor---branca" class="section level3">
+<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Branca</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-3007b9d79a774ed85401" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3007b9d79a774ed85401">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[532,626,569,658,577,540,685,748,899,1262],"text":["ANO_CENSO_SUP: 2009<br />value:  532","ANO_CENSO_SUP: 2010<br />value:  626","ANO_CENSO_SUP: 2011<br />value:  569","ANO_CENSO_SUP: 2012<br />value:  658","ANO_CENSO_SUP: 2013<br />value:  577","ANO_CENSO_SUP: 2014<br />value:  540","ANO_CENSO_SUP: 2015<br />value:  685","ANO_CENSO_SUP: 2016<br />value:  748","ANO_CENSO_SUP: 2017<br />value:  899","ANO_CENSO_SUP: 2018<br />value: 1262"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":98.6301369863014},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-63.1,1325.1],"tickmode":"array","ticktext":["0","500","1000"],"tickvals":[0,500,1000],"categoryorder":"array","categoryarray":["0","500","1000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"38035c2de5e9":{"x":{},"y":{},"type":"bar"}},"cur_data":"38035c2de5e9","visdat":{"38035c2de5e9":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5e3480db75ce4eb73f26" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5e3480db75ce4eb73f26">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009"," 912"]},{"value":["2010","1077"]},{"value":["2011"," 952"]},{"value":["2012","1098"]},{"value":["2013"," 959"]},{"value":["2014"," 947"]},{"value":["2015","1142"]},{"value":["2016","1240"]},{"value":["2017","1524"]},{"value":["2018","2038"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Total"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="amarela" class="section level1">
 <h1>Amarela</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor-amarela" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Amarela</strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor---amarela" class="section level3">
+<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Amarela</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-d516d1eabcdd908534df" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d516d1eabcdd908534df">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[20,163,461,664,384,250,243,315,223,354],"text":["ANO_CENSO_SUP: 2009<br />value:  20","ANO_CENSO_SUP: 2010<br />value: 163","ANO_CENSO_SUP: 2011<br />value: 461","ANO_CENSO_SUP: 2012<br />value: 664","ANO_CENSO_SUP: 2013<br />value: 384","ANO_CENSO_SUP: 2014<br />value: 250","ANO_CENSO_SUP: 2015<br />value: 243","ANO_CENSO_SUP: 2016<br />value: 315","ANO_CENSO_SUP: 2017<br />value: 223","ANO_CENSO_SUP: 2018<br />value: 354"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":84.0182648401827},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-33.2,697.2],"tickmode":"array","ticktext":["0","200","400","600"],"tickvals":[0,200,400,600],"categoryorder":"array","categoryarray":["0","200","400","600"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"38033633cd1":{"x":{},"y":{},"type":"bar"}},"cur_data":"38033633cd1","visdat":{"38033633cd1":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-51bfff3de0bfb2029b14" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-51bfff3de0bfb2029b14">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009"," 30"]},{"value":["2010","286"]},{"value":["2011","661"]},{"value":["2012","971"]},{"value":["2013","531"]},{"value":["2014","393"]},{"value":["2015","383"]},{"value":["2016","491"]},{"value":["2017","358"]},{"value":["2018","508"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Total"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="indígena" class="section level1">
 <h1>Indígena</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor-indígena" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Indígena</strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor---indígena" class="section level3">
+<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Indígena</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-0e8e1309fb25ba954c60" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0e8e1309fb25ba954c60">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[4,5,19,20,15,13,9,28,30,38],"text":["ANO_CENSO_SUP: 2009<br />value:  4","ANO_CENSO_SUP: 2010<br />value:  5","ANO_CENSO_SUP: 2011<br />value: 19","ANO_CENSO_SUP: 2012<br />value: 20","ANO_CENSO_SUP: 2013<br />value: 15","ANO_CENSO_SUP: 2014<br />value: 13","ANO_CENSO_SUP: 2015<br />value:  9","ANO_CENSO_SUP: 2016<br />value: 28","ANO_CENSO_SUP: 2017<br />value: 30","ANO_CENSO_SUP: 2018<br />value: 38"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":69.4063926940639},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-1.9,39.9],"tickmode":"array","ticktext":["0","10","20","30"],"tickvals":[0,10,20,30],"categoryorder":"array","categoryarray":["0","10","20","30"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"38034578c5a":{"x":{},"y":{},"type":"bar"}},"cur_data":"38034578c5a","visdat":{"38034578c5a":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-72c4ca0a642ca31c6f46" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-72c4ca0a642ca31c6f46">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009","12"]},{"value":["2010","16"]},{"value":["2011","25"]},{"value":["2012","34"]},{"value":["2013","24"]},{"value":["2014","26"]},{"value":["2015","25"]},{"value":["2016","41"]},{"value":["2017","62"]},{"value":["2018","62"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Total"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="nqd" class="section level1">
 <h1>NQD</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-não-quis-definir-raçacor" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Não Quis Definir Raça/Cor </strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor---não-quis-definir" class="section level3">
+<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Não Quis Definir</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-68f7b72c0ee90c4703d0" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-68f7b72c0ee90c4703d0">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[4860,5956,4330,3336,3159,3514,4338,5011,5354,4939],"text":["ANO_CENSO_SUP: 2009<br />value: 4860","ANO_CENSO_SUP: 2010<br />value: 5956","ANO_CENSO_SUP: 2011<br />value: 4330","ANO_CENSO_SUP: 2012<br />value: 3336","ANO_CENSO_SUP: 2013<br />value: 3159","ANO_CENSO_SUP: 2014<br />value: 3514","ANO_CENSO_SUP: 2015<br />value: 4338","ANO_CENSO_SUP: 2016<br />value: 5011","ANO_CENSO_SUP: 2017<br />value: 5354","ANO_CENSO_SUP: 2018<br />value: 4939"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":98.6301369863014},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-297.8,6253.8],"tickmode":"array","ticktext":["0","2000","4000","6000"],"tickvals":[0,2000,4000,6000],"categoryorder":"array","categoryarray":["0","2000","4000","6000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"38035e9b0e7":{"x":{},"y":{},"type":"bar"}},"cur_data":"38035e9b0e7","visdat":{"38035e9b0e7":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f19fbd29abfd6340bb61" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f19fbd29abfd6340bb61">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009","8357"]},{"value":["2010","9944"]},{"value":["2011","7337"]},{"value":["2012","5732"]},{"value":["2013","5240"]},{"value":["2014","5798"]},{"value":["2015","6917"]},{"value":["2016","7694"]},{"value":["2017","8498"]},{"value":["2018","7806"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Total"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="ndi" class="section level1">
 <h1>NDI</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-não-definiu-identidade-de-raçacor" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Não Definiu Identidade de Raça/Cor </strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino-e-raçacor---não-definiu-identidade" class="section level3">
+<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Não Definiu Identidade</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-c293b48880960c5ab45c" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c293b48880960c5ab45c">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[4513,3090,4384,4158,3375,2655,1891,1371,844,339],"text":["ANO_CENSO_SUP: 2009<br />value: 4513","ANO_CENSO_SUP: 2010<br />value: 3090","ANO_CENSO_SUP: 2011<br />value: 4384","ANO_CENSO_SUP: 2012<br />value: 4158","ANO_CENSO_SUP: 2013<br />value: 3375","ANO_CENSO_SUP: 2014<br />value: 2655","ANO_CENSO_SUP: 2015<br />value: 1891","ANO_CENSO_SUP: 2016<br />value: 1371","ANO_CENSO_SUP: 2017<br />value:  844","ANO_CENSO_SUP: 2018<br />value:  339"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":98.6301369863014},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-225.65,4738.65],"tickmode":"array","ticktext":["0","1000","2000","3000","4000"],"tickvals":[0,1000,2000,3000,4000],"categoryorder":"array","categoryarray":["0","1000","2000","3000","4000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"38032ab347fa":{"x":{},"y":{},"type":"bar"}},"cur_data":"38032ab347fa","visdat":{"38032ab347fa":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5aba26a3e267a02403dc" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5aba26a3e267a02403dc">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009","7685"]},{"value":["2010","5416"]},{"value":["2011","7533"]},{"value":["2012","6999"]},{"value":["2013","5767"]},{"value":["2014","4627"]},{"value":["2015","3131"]},{"value":["2016","2239"]},{"value":["2017","1481"]},{"value":["2018"," 655"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Não Definiu Identidade"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="total" class="section level1">
 <h1>Total</h1>
-<div id="nº-de-concluintes-em-ensino-superior---sexo-feminino" class="section level3">
-<h3><font size="5"> <strong>Nº de concluintes em ensino superior - Sexo Feminino</strong> </font></h3>
-<div class="knitr-options" data-fig-width="288" data-fig-height="384">
+<div id="total-do-nº-de-concluintes-em-ensino-superior---sexo-feminino" class="section level3">
+<h3><font size="5"> <strong>Total do Nº de concluintes em ensino superior - Sexo Feminino</strong> </font></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-fbb6e84ca4e155e61910" style="width:288px;height:384px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fbb6e84ca4e155e61910">{"x":{"data":[{"orientation":"v","width":[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],"base":[0,0,0,0,0,0,0,0,0,0],"x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"y":[11965,12380,12220,12311,10959,11128,12050,12358,13284,14126],"text":["ANO_CENSO_SUP: 2009<br />value: 11965","ANO_CENSO_SUP: 2010<br />value: 12380","ANO_CENSO_SUP: 2011<br />value: 12220","ANO_CENSO_SUP: 2012<br />value: 12311","ANO_CENSO_SUP: 2013<br />value: 10959","ANO_CENSO_SUP: 2014<br />value: 11128","ANO_CENSO_SUP: 2015<br />value: 12050","ANO_CENSO_SUP: 2016<br />value: 12358","ANO_CENSO_SUP: 2017<br />value: 13284","ANO_CENSO_SUP: 2018<br />value: 14126"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,196,204,1)","line":{"width":1.88976377952756,"color":"rgba(250,193,19,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":21.4794520547945,"r":7.30593607305936,"b":67.5799086757991,"l":113.24200913242},"plot_bgcolor":"transparent","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2008.275,2018.725],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Ano","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-706.3,14832.3],"tickmode":"array","ticktext":["0","5000","10000"],"tickvals":[0,5000,10000],"categoryorder":"array","categoryarray":["0","5000","10000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":29.2237442922374},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(179,179,179,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Nº","font":{"color":"rgba(219,68,112,1)","family":"","size":29.2237442922374}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(100,210,170,1)","width":2.65670402656704,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":29.2237442922374}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"38031fff5a35":{"x":{},"y":{},"type":"bar"}},"cur_data":"38031fff5a35","visdat":{"38031fff5a35":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1d29b18af8afab648963" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1d29b18af8afab648963">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"splitLine":{"show":false}}],"xAxis":[{"data":["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"type":"category","boundaryGap":true,"show":true}],"series":[{"data":[{"value":["2009","20433"]},{"value":["2010","20758"]},{"value":["2011","20255"]},{"value":["2012","20190"]},{"value":["2013","17639"]},{"value":["2014","18197"]},{"value":["2015","19092"]},{"value":["2016","19151"]},{"value":["2017","20996"]},{"value":["2018","22033"]}],"name":"Nº Concluintes","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"on"}}],"tooltip":{"trigger":"item"},"title":[{"text":"Sexo Feminino","subtext":"Total"}],"color":["#00c4cc","#db4470"],"backgroundColor":"#ffffff","toolbox":{"feature":{"dataView":{"title":"Ver dados"}}}},"dispose":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -2765,28 +2763,27 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
-#library(ggplot2)
-library("DT")
+library(ggplot2)
 library("readr")
 library("dplyr")
-library("ggplot2")
-library("kableExtra")
 library("tidyr")
-library("formattable")
-library("plotly")
-library("ggplotlyExtra")
-library("ggpubr")
-library("tidyverse")
-library("hrbrthemes")
-library("waffle")
 library(ggthemes)
 library(extrafont)
 library(gganimate)
 
+
+library(echarts4r) # charts
+library(tidyverse) # general use
+library(lubridate) # dates and times
+library(prophet) # forecasting
+
+
+
+
 CENSO_SUP <- NULL
 CENSO_SUP <- read_delim("data/educacao/CENSO_SUPERIOR/DM_ALUNO_2009_2018_CO_IES_by_ANO_TP_COR_RACA_TP_SEXO.csv",",",escape_double = FALSE,trim_ws = FALSE)
-#CENSO_SUP$TP_SEXO <- ifelse(CENSO_SUP$TP_SEXO==1,"Feminino","Masculino")
-CENSO_SUP$TP_SEXO <- ifelse(CENSO_SUP$TP_SEXO==1,"F","M")
+#CENSO_SUP$TP_SEXO <- ifelse(CENSO_SUP$TP_SEXO==1,"Feminino","Feminino")
+CENSO_SUP$TP_SEXO <- ifelse(CENSO_SUP$TP_SEXO==1,"F","F")
 
 # Transformacao da variavel numerica de acordo com o vocabulario 
 CENSO_SUP$TP_COR_RACA <- ifelse(CENSO_SUP$TP_COR_RACA==0,"*NQD",
@@ -2802,367 +2799,291 @@ O número de concluintes do sexo masculino (biológico - definição IBGE)
 desagregado por raça/cor (definição IBGE) está disponível no gráfico 
 de barras.
 
+
 Preta
 ================================
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Preta** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Preta** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_COR_RACA %in% c("Preta")) %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+CONCLUINTES_SSA %>% 
+	filter(TP_COR_RACA %in% c("Preta")) %>%filter(TP_SEXO %in% c("F")) %>% 
+	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
+	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+   e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Total") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
 
 Parda
 ================================
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Parda** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Parda** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_COR_RACA %in% c("Parda")) %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+CONCLUINTES_SSA %>% 
+	filter(TP_COR_RACA %in% c("Parda")) %>%filter(TP_SEXO %in% c("F")) %>% 
+	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
+	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+   e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Total") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
 
 Preta+Parda
 ================================
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Preta+Parda** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Preta + Parda** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_COR_RACA %in% c("Preta","Parda")) %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+CONCLUINTES_SSA %>% 
+	filter(TP_COR_RACA %in% c("Preta","Parda")) %>%filter(TP_SEXO %in% c("F")) %>% 
+	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
+	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+   e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Total") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
 
-
-
 Branca
 ================================
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Branca** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Branca** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_COR_RACA %in% c("Branca")) %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+CONCLUINTES_SSA %>% 
+	filter(TP_COR_RACA %in% c("Branca")) %>%filter(TP_SEXO %in% c("F")) %>% 
+	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
+	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+   e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Total") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
 
 Amarela
 ================================
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Amarela** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Amarela** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_COR_RACA %in% c("Amarela")) %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+CONCLUINTES_SSA %>% 
+	filter(TP_COR_RACA %in% c("Amarela")) %>%filter(TP_SEXO %in% c("F")) %>% 
+	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
+	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+   e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Total") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
-
 
 Indígena
 ================================
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Indígena** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor Indígena** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_COR_RACA %in% c("Indígena")) %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+CONCLUINTES_SSA %>% 
+	filter(TP_COR_RACA %in% c("Indígena")) %>%filter(TP_SEXO %in% c("F")) %>% 
+	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
+	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+   e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Total") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
 
-
 NQD
 ================================
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Não Quis Definir** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Não Quis Definir Raça/Cor ** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_COR_RACA %in% c("*NQD")) %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+
+CONCLUINTES_SSA %>% 
+	filter(TP_COR_RACA %in% c("*NQD")) %>%filter(TP_SEXO %in% c("F")) %>% 
+	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
+	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+   e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Total") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
 
 NDI
 ================================
+### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Não Definiu Identidade** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Não Definiu Identidade de Raça/Cor ** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_COR_RACA %in% c("*NDI")) %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+CONCLUINTES_SSA %>% 
+	filter(TP_COR_RACA %in% c("*NDI")) %>%filter(TP_SEXO %in% c("F")) %>% 
+	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
+	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+   e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Não Definiu Identidade") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
 
+
 Total
 ================================
+### <font size="5"> **Total do Nº de concluintes em ensino superior - Sexo Feminino** </font>
 
-### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino** </font>
 
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r,eval=TRUE}
 
-objeto <- CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
-ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113",width = 0.5) + 
-  labs(
-    title = "",
-    x = "Ano",
-    y = "Nº"
-  ) +
-  theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
-  theme(legend.position = "none")+
-  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
-#  theme( axis.line = element_line(colour = "darkblue", 
-#                      size = 1, linetype = "solid"))+
-  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
-  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
-        panel.grid.major = element_line(color = "gray70", size = .5),
-        panel.grid.minor = element_line(color = "gray70", size = .25))
-  
-     #theme(plot.background = element_rect(fill = "#db4470"))
-  
-  #scale_color_ipsum() +
-  #theme_ipsum_rc()
-  #theme_minimal(base_family = "Roboto Condensed") +
-  #theme(panel.grid = element_blank(), axis.ticks.y = element_line()) +
-  #guides(fill = guide_legend(reverse = TRUE))
-ggplotly(objeto)
+CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+  e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  #e_labels(position = "right") %>% 
+  e_labels(position = "on") %>% 
+  e_tooltip() %>% 
+  e_title("Sexo Feminino", "Total") %>% 
+  #e_flip_coords() %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  #e_x_axis(show = FALSE) %>%
+  e_x_axis(show = TRUE) %>%
+  e_color(
+    c("#00c4cc", "#db4470"),
+    "#ffffff"
+  ) %>%
+  e_toolbox_feature(
+    feature = "dataView",
+    title = "Ver dados"
+  )
 
 ```
 
