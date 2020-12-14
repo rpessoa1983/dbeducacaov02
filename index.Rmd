@@ -45,11 +45,8 @@ CONCLUINTES_SSA <- CENSO_SUP %>% filter(IN_CONCLUINTE==1)
 
 ```
 
-<<<<<<< HEAD
-<meta name="viewport" content="width=device-width, initial-scale=0.80, maximum-scale=0.80, user-scalable=no" />
-=======
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
->>>>>>> 0624b7ea0ba743bbd0b61dab07dfb9fec0caa294
+
 
 O número de concluintes do sexo masculino (biológico - definição IBGE) 
 desagregado por raça/cor (definição IBGE) está disponível no gráfico 
