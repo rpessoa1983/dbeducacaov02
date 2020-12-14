@@ -65,7 +65,7 @@ CONCLUINTES_SSA %>%
    e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
   #e_flip_coords() %>% 
@@ -97,7 +97,7 @@ CONCLUINTES_SSA %>%
    e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
   #e_flip_coords() %>% 
@@ -115,7 +115,7 @@ CONCLUINTES_SSA %>%
 
 ```
 
-Preta+Parda
+Preta+Parda {.mobile}
 ================================
 ### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Preta+Parda** </font>
 
@@ -129,12 +129,11 @@ CONCLUINTES_SSA %>%
    e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
   #e_flip_coords() %>% 
   e_y_axis(splitLine = list(show = FALSE)) %>% 
-  #e_x_axis(show = FALSE) %>%
   e_x_axis(show = TRUE) %>%
   e_color(
     c("#00c4cc", "#db4470"),
@@ -161,7 +160,7 @@ CONCLUINTES_SSA %>%
    e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
   #e_flip_coords() %>% 
@@ -193,7 +192,7 @@ CONCLUINTES_SSA %>%
    e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
   #e_flip_coords() %>% 
@@ -225,7 +224,7 @@ CONCLUINTES_SSA %>%
    e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
   #e_flip_coords() %>% 
@@ -258,7 +257,7 @@ CONCLUINTES_SSA %>%
    e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
   #e_flip_coords() %>% 
@@ -290,7 +289,7 @@ CONCLUINTES_SSA %>%
    e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Não Definiu Identidade") %>% 
   #e_flip_coords() %>% 
@@ -320,7 +319,7 @@ CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% 
   e_charts(x = ANO_CENSO_SUP) %>%
   e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
-  e_labels(position = "on") %>% 
+  e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
   #e_flip_coords() %>% 
