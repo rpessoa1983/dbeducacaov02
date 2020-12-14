@@ -322,7 +322,7 @@ CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
  # e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE),margin = 20) %>% 
+  e_y_axis(splitLine = list(show = FALSE)) %>% 
   #e_x_axis(show = FALSE) %>%
   e_x_axis(show = TRUE) %>%
   e_color(
