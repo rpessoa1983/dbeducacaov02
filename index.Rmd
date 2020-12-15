@@ -315,14 +315,14 @@ Total
 ```{r,eval=TRUE}
 
 CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-  e_charts(x = ANO_CENSO_SUP,width="80%", height=300) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
+  e_charts(x = ANO_CENSO_SUP) %>%
+  e_bar(value,legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
   e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
  # e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
+  e_y_axis(splitLine = list(show = FALSE),formatter = e_axis_formatter("decimal", locale = "pt")) %>% 
   #e_x_axis(show = FALSE) %>%
   e_x_axis(show = TRUE) %>%
   e_color(
@@ -331,8 +331,13 @@ CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% 
   ) %>%  e_toolbox_feature(
     feature = "dataView",
     title = "Ver dados"
-  )  
-
+  ) %>% 
+e_axis_labels(x = "",y= "Number") %>%
+  e_tooltip(trigger="axis",
+            axisPointer = list(
+              type = "cross"),
+            textStyle=list(fontFamily="arial",
+                           fontSize=12))
 
 
 ```
