@@ -61,28 +61,37 @@ Preta
 
 ```{r,eval=TRUE}
 
-CONCLUINTES_SSA %>% 
-	filter(TP_COR_RACA %in% c("Preta")) %>%filter(TP_SEXO %in% c("F")) %>% 
-	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
-	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-   e_charts(x = ANO_CENSO_SUP) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
-  #e_labels(position = "right") %>% 
-  e_labels(position = "top") %>% 
-  e_tooltip() %>% 
-  e_title("Sexo Feminino", "Total") %>% 
-  #e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
-  #e_x_axis(show = FALSE) %>%
-  e_x_axis(show = TRUE) %>%
-  e_color(
-    c("#00c4cc", "#db4470"),
-    "#ffffff"
-  ) %>%
-  e_toolbox_feature(
-    feature = "dataView",
-    title = "Ver dados"
-  )
+
+	objeto <- CONCLUINTES_SSA %>%
+		filter(TP_COR_RACA %in% c("Preta")) %>%filter(TP_SEXO %in% c("F")) %>% 
+  mutate(ANO =ANO_CENSO_SUP) %>%
+  group_by(ANO) %>% 
+  summarise(Concluintes =sum(value)) %>%
+  ggplot(aes(x=ANO,y=Concluintes)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+  theme(axis.title.x=element_text(size=9)) +
+  theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text=element_text(size =9)) +
+  theme(axis.text=element_text(size =9))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue",
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))+
+  scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
+  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
+
+ggplotly(objeto,dynamicTicks = TRUE)
+
 
 ```
 
@@ -93,28 +102,36 @@ Parda
 
 ```{r,eval=TRUE}
 
-CONCLUINTES_SSA %>% 
+	objeto <- CONCLUINTES_SSA %>%
 	filter(TP_COR_RACA %in% c("Parda")) %>%filter(TP_SEXO %in% c("F")) %>% 
-	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
-	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-   e_charts(x = ANO_CENSO_SUP) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
-  #e_labels(position = "right") %>% 
-  e_labels(position = "top") %>% 
-  e_tooltip() %>% 
-  e_title("Sexo Feminino", "Total") %>% 
-  #e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
-  #e_x_axis(show = FALSE) %>%
-  e_x_axis(show = TRUE) %>%
-  e_color(
-    c("#00c4cc", "#db4470"),
-    "#ffffff"
-  ) %>%
-  e_toolbox_feature(
-    feature = "dataView",
-    title = "Ver dados"
-  )
+  mutate(ANO =ANO_CENSO_SUP) %>%
+  group_by(ANO) %>% 
+  summarise(Concluintes =sum(value)) %>%
+  ggplot(aes(x=ANO,y=Concluintes)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+  theme(axis.title.x=element_text(size=9)) +
+  theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text=element_text(size =9)) +
+  theme(axis.text=element_text(size =9))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue",
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))+
+  scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
+  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
+
+ggplotly(objeto,dynamicTicks = TRUE)
+
 
 ```
 
@@ -125,27 +142,36 @@ Preta+Parda
 
 ```{r,eval=TRUE}
 
-CONCLUINTES_SSA %>% 
+  objeto <- CONCLUINTES_SSA %>%
 	filter(TP_COR_RACA %in% c("Preta","Parda")) %>%filter(TP_SEXO %in% c("F")) %>% 
-	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
-	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-   e_charts(x = ANO_CENSO_SUP) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
-  #e_labels(position = "right") %>% 
-  e_labels(position = "top") %>% 
-  e_tooltip() %>% 
-  e_title("Sexo Feminino", "Total") %>% 
-  #e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
-  e_x_axis(show = TRUE) %>%
-  e_color(
-    c("#00c4cc", "#db4470"),
-    "#ffffff"
-  ) %>%
-  e_toolbox_feature(
-    feature = "dataView",
-    title = "Ver dados"
-  )
+  mutate(ANO =ANO_CENSO_SUP) %>%
+  group_by(ANO) %>% 
+  summarise(Concluintes =sum(value)) %>%
+  ggplot(aes(x=ANO,y=Concluintes)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+  theme(axis.title.x=element_text(size=9)) +
+  theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text=element_text(size =9)) +
+  theme(axis.text=element_text(size =9))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue",
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))+
+  scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
+  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
+
+ggplotly(objeto,dynamicTicks = TRUE)
+
 
 ```
 
@@ -156,28 +182,36 @@ Branca
 
 ```{r,eval=TRUE}
 
-CONCLUINTES_SSA %>% 
+objeto <- CONCLUINTES_SSA %>%
 	filter(TP_COR_RACA %in% c("Branca")) %>%filter(TP_SEXO %in% c("F")) %>% 
-	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
-	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-   e_charts(x = ANO_CENSO_SUP) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
-  #e_labels(position = "right") %>% 
-  e_labels(position = "top") %>% 
-  e_tooltip() %>% 
-  e_title("Sexo Feminino", "Total") %>% 
-  #e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
-  #e_x_axis(show = FALSE) %>%
-  e_x_axis(show = TRUE) %>%
-  e_color(
-    c("#00c4cc", "#db4470"),
-    "#ffffff"
-  ) %>%
-  e_toolbox_feature(
-    feature = "dataView",
-    title = "Ver dados"
-  )
+  mutate(ANO =ANO_CENSO_SUP) %>%
+  group_by(ANO) %>% 
+  summarise(Concluintes =sum(value)) %>%
+ggplot(aes(x=ANO,y=Concluintes)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+  theme(axis.title.x=element_text(size=9)) +
+  theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text=element_text(size =9)) +
+  theme(axis.text=element_text(size =9))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue",
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))+
+  scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
+  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
+
+ggplotly(objeto,dynamicTicks = TRUE)
+		
 
 ```
 
@@ -188,28 +222,36 @@ Amarela
 
 ```{r,eval=TRUE}
 
-CONCLUINTES_SSA %>% 
+objeto <- CONCLUINTES_SSA %>%
 	filter(TP_COR_RACA %in% c("Amarela")) %>%filter(TP_SEXO %in% c("F")) %>% 
-	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
-	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-   e_charts(x = ANO_CENSO_SUP) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
-  #e_labels(position = "right") %>% 
-  e_labels(position = "top") %>% 
-  e_tooltip() %>% 
-  e_title("Sexo Feminino", "Total") %>% 
-  #e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
-  #e_x_axis(show = FALSE) %>%
-  e_x_axis(show = TRUE) %>%
-  e_color(
-    c("#00c4cc", "#db4470"),
-    "#ffffff"
-  ) %>%
-  e_toolbox_feature(
-    feature = "dataView",
-    title = "Ver dados"
-  )
+  mutate(ANO =ANO_CENSO_SUP) %>%
+  group_by(ANO) %>% 
+  summarise(Concluintes =sum(value)) %>%
+ggplot(aes(x=ANO,y=Concluintes)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+  theme(axis.title.x=element_text(size=9)) +
+  theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text=element_text(size =9)) +
+  theme(axis.text=element_text(size =9))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue",
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))+
+  scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
+  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
+
+ggplotly(objeto,dynamicTicks = TRUE)
+
 
 ```
 
@@ -220,28 +262,35 @@ Indígena
 
 ```{r,eval=TRUE}
 
-CONCLUINTES_SSA %>% 
-	filter(TP_COR_RACA %in% c("Indígena")) %>%filter(TP_SEXO %in% c("F")) %>% 
-	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
-	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-   e_charts(x = ANO_CENSO_SUP) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
-  #e_labels(position = "right") %>% 
-  e_labels(position = "top") %>% 
-  e_tooltip() %>% 
-  e_title("Sexo Feminino", "Total") %>% 
-  #e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
-  #e_x_axis(show = FALSE) %>%
-  e_x_axis(show = TRUE) %>%
-  e_color(
-    c("#00c4cc", "#db4470"),
-    "#ffffff"
-  ) %>%
-  e_toolbox_feature(
-    feature = "dataView",
-    title = "Ver dados"
-  )
+objeto <- CONCLUINTES_SSA %>%
+  filter(TP_COR_RACA %in% c("Indígena")) %>%filter(TP_SEXO %in% c("F")) %>% 
+  mutate(ANO =ANO_CENSO_SUP) %>%
+  group_by(ANO) %>% 
+  summarise(Concluintes =sum(value)) %>%
+ggplot(aes(x=ANO,y=Concluintes)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+  theme(axis.title.x=element_text(size=9)) +
+  theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text=element_text(size =9)) +
+  theme(axis.text=element_text(size =9))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue",
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))+
+  scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
+  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
+
+ggplotly(objeto,dynamicTicks = TRUE)
 
 ```
 
@@ -252,29 +301,35 @@ NQD
 
 ```{r,eval=TRUE}
 
+  objeto <- CONCLUINTES_SSA %>%
+  filter(TP_COR_RACA %in% c("*NQD")) %>%filter(TP_SEXO %in% c("F")) %>% 
+  mutate(ANO =ANO_CENSO_SUP) %>%
+  group_by(ANO) %>% 
+  summarise(Concluintes =sum(value)) %>%
+ggplot(aes(x=ANO,y=Concluintes)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+  theme(axis.title.x=element_text(size=9)) +
+  theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text=element_text(size =9)) +
+  theme(axis.text=element_text(size =9))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue",
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))+
+  scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
+  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-CONCLUINTES_SSA %>% 
-	filter(TP_COR_RACA %in% c("*NQD")) %>%filter(TP_SEXO %in% c("F")) %>% 
-	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
-	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-   e_charts(x = ANO_CENSO_SUP) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
-  #e_labels(position = "right") %>% 
-  e_labels(position = "top") %>% 
-  e_tooltip() %>% 
-  e_title("Sexo Feminino", "Total") %>% 
-  #e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
-  #e_x_axis(show = FALSE) %>%
-  e_x_axis(show = TRUE) %>%
-  e_color(
-    c("#00c4cc", "#db4470"),
-    "#ffffff"
-  ) %>%
-  e_toolbox_feature(
-    feature = "dataView",
-    title = "Ver dados"
-  )
+ggplotly(objeto,dynamicTicks = TRUE)
 
 ```
 
@@ -285,32 +340,40 @@ NDI
 
 ```{r,eval=TRUE}
 
-CONCLUINTES_SSA %>% 
-	filter(TP_COR_RACA %in% c("*NDI")) %>%filter(TP_SEXO %in% c("F")) %>% 
-	group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% 
-	mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-   e_charts(x = ANO_CENSO_SUP) %>%
-  e_bar(value, legend = FALSE, name = "Nº Concluintes") %>% 
-  #e_labels(position = "right") %>% 
-  e_labels(position = "top") %>% 
-  e_tooltip() %>% 
-  e_title("Sexo Feminino", "Não Definiu Identidade") %>% 
-  #e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE)) %>% 
-  #e_x_axis(show = FALSE) %>%
-  e_x_axis(show = TRUE) %>%
-  e_color(
-    c("#00c4cc", "#db4470"),
-    "#ffffff"
-  ) %>%
-  e_toolbox_feature(
-    feature = "dataView",
-    title = "Ver dados"
-  )
+  objeto <- CONCLUINTES_SSA %>%
+  filter(TP_COR_RACA %in% c("*NDI")) %>%filter(TP_SEXO %in% c("F")) %>% 
+  mutate(ANO =ANO_CENSO_SUP) %>%
+  group_by(ANO) %>% 
+  summarise(Concluintes =sum(value)) %>%
+ggplot(aes(x=ANO,y=Concluintes)) +
+  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  labs(
+    title = "",
+    x = "Ano",
+    y = "Nº"
+  ) +
+  theme(title = element_text(size = 12,colour = "#db4470"))+
+  theme(axis.title.x=element_text(size=9)) +
+  theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text=element_text(size =9)) +
+  theme(axis.text=element_text(size =9))  +
+  theme(legend.position = "none")+
+  theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
+#  theme( axis.line = element_line(colour = "darkblue",
+#                      size = 1, linetype = "solid"))+
+  theme(panel.border = element_rect(fill=NA, color = "#64D2AA", size = 2))+
+  theme(panel.background = element_rect(fill=NA,color = "gray70", size = 2),
+        panel.grid.major = element_line(color = "gray70", size = .5),
+        panel.grid.minor = element_line(color = "gray70", size = .25))+
+  scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
+  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
+
+ggplotly(objeto,dynamicTicks = TRUE)
+
+  
 
 ```
-
-
+### <font size="5"> **Nº Total de concluintes em ensino superior - Sexo Feminino** </font>
 Total
 ================================
 ```{r, eval=TRUE, fig.height=3, fig.width=3}
@@ -341,6 +404,7 @@ ggplot(aes(x=ANO,y=Concluintes)) +
         panel.grid.minor = element_line(color = "gray70", size = .25))+
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
     theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
-ggplotly(objeto)
+
+ggplotly(objeto,dynamicTicks = TRUE)
 
 ```
