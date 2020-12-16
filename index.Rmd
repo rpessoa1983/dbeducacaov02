@@ -38,7 +38,7 @@ library(prophet) # forecasting
 CENSO_SUP <- NULL
 CENSO_SUP <- read_delim("data/educacao/CENSO_SUPERIOR/DM_ALUNO_2009_2018_CO_IES_by_ANO_TP_COR_RACA_TP_SEXO.csv",",",escape_double = FALSE,trim_ws = FALSE)
 #CENSO_SUP$TP_SEXO <- ifelse(CENSO_SUP$TP_SEXO==1,"Feminino","Feminino")
-CENSO_SUP$TP_SEXO <- ifelse(CENSO_SUP$TP_SEXO==1,"F","F")
+CENSO_SUP$TP_SEXO <- ifelse(CENSO_SUP$TP_SEXO==1,"F","M")
 
 # Transformacao da variavel numerica de acordo com o vocabulario 
 CENSO_SUP$TP_COR_RACA <- ifelse(CENSO_SUP$TP_COR_RACA==0,"*NQD",
@@ -75,10 +75,10 @@ Preta
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-  theme(axis.title.x=element_text(size=9)) +
-  theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text=element_text(size =9)) +
-  theme(axis.text=element_text(size =9))  +
+  theme(axis.title.x=element_text(size=11)) +
+  theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text=element_text(size =11)) +
+  theme(axis.text=element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -90,7 +90,7 @@ Preta
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
   theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
+ggplotly(objeto)
 
 
 ```
@@ -115,10 +115,10 @@ Parda
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-  theme(axis.title.x=element_text(size=9)) +
-  theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text=element_text(size =9)) +
-  theme(axis.text=element_text(size =9))  +
+  theme(axis.title.x=element_text(size=11)) +
+  theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text=element_text(size =11)) +
+  theme(axis.text=element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -130,7 +130,7 @@ Parda
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
   theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
+ggplotly(objeto)
 
 
 ```
@@ -155,10 +155,10 @@ Preta+Parda
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-  theme(axis.title.x=element_text(size=9)) +
-  theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text=element_text(size =9)) +
-  theme(axis.text=element_text(size =9))  +
+  theme(axis.title.x=element_text(size=11)) +
+  theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text=element_text(size =11)) +
+  theme(axis.text=element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -170,7 +170,7 @@ Preta+Parda
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
   theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
+ggplotly(objeto)
 
 
 ```
@@ -195,10 +195,10 @@ ggplot(aes(x=ANO,y=Concluintes)) +
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-  theme(axis.title.x=element_text(size=9)) +
-  theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text=element_text(size =9)) +
-  theme(axis.text=element_text(size =9))  +
+  theme(axis.title.x=element_text(size=11)) +
+  theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text=element_text(size =11)) +
+  theme(axis.text=element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -210,7 +210,7 @@ ggplot(aes(x=ANO,y=Concluintes)) +
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
   theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
+ggplotly(objeto)
 		
 
 ```
@@ -235,10 +235,10 @@ ggplot(aes(x=ANO,y=Concluintes)) +
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-  theme(axis.title.x=element_text(size=9)) +
-  theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text=element_text(size =9)) +
-  theme(axis.text=element_text(size =9))  +
+  theme(axis.title.x=element_text(size=11)) +
+  theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text=element_text(size =11)) +
+  theme(axis.text=element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -250,7 +250,7 @@ ggplot(aes(x=ANO,y=Concluintes)) +
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
   theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
+ggplotly(objeto)
 
 
 ```
@@ -275,10 +275,10 @@ ggplot(aes(x=ANO,y=Concluintes)) +
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-  theme(axis.title.x=element_text(size=9)) +
-  theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text=element_text(size =9)) +
-  theme(axis.text=element_text(size =9))  +
+  theme(axis.title.x=element_text(size=11)) +
+  theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text=element_text(size =11)) +
+  theme(axis.text=element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -290,14 +290,13 @@ ggplot(aes(x=ANO,y=Concluintes)) +
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
   theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
+ggplotly(objeto)
 
 ```
 
 NQD
 ================================
 ### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Não Quis Definir** </font>
-
 
 ```{r,eval=TRUE}
 
@@ -314,10 +313,10 @@ ggplot(aes(x=ANO,y=Concluintes)) +
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-  theme(axis.title.x=element_text(size=9)) +
-  theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text=element_text(size =9)) +
-  theme(axis.text=element_text(size =9))  +
+  theme(axis.title.x=element_text(size=11)) +
+  theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text=element_text(size =11)) +
+  theme(axis.text=element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -329,7 +328,7 @@ ggplot(aes(x=ANO,y=Concluintes)) +
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
   theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
+ggplotly(objeto)
 
 ```
 
@@ -337,11 +336,10 @@ NDI
 ================================
 ### <font size="5"> **Nº de concluintes em ensino superior - Sexo Feminino e Raça/Cor - Não Definiu Identidade** </font>
 
-
 ```{r,eval=TRUE}
 
   objeto <- CONCLUINTES_SSA %>%
-  filter(TP_COR_RACA %in% c("*NDI")) %>%filter(TP_SEXO %in% c("F")) %>% 
+  filter(TP_COR_RACA %in% c("*NDI")) %>% filter(TP_SEXO %in% c("F")) %>% 
   mutate(ANO =ANO_CENSO_SUP) %>%
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
@@ -353,10 +351,10 @@ ggplot(aes(x=ANO,y=Concluintes)) +
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-  theme(axis.title.x=element_text(size=9)) +
-  theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text=element_text(size =9)) +
-  theme(axis.text=element_text(size =9))  +
+    theme(axis.title.x=element_text(size=11)) +
+    theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text = element_text(size =11)) +
+    theme(axis.text = element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -366,16 +364,17 @@ ggplot(aes(x=ANO,y=Concluintes)) +
         panel.grid.major = element_line(color = "gray70", size = .5),
         panel.grid.minor = element_line(color = "gray70", size = .25))+
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
-  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
+    theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
-
-  
+ggplotly(objeto)
 
 ```
-### <font size="5"> **Nº Total de concluintes em ensino superior - Sexo Feminino** </font>
+
+
 Total
 ================================
+### <font size="5"> **Nº Total de concluintes em ensino superior - Sexo Feminino** </font>
+
 ```{r, eval=TRUE, fig.height=3, fig.width=3}
 
 objeto <- CONCLUINTES_SSA %>% 
@@ -390,10 +389,10 @@ ggplot(aes(x=ANO,y=Concluintes)) +
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=9)) +
-    theme(axis.title.y=element_text(size=9)) +
-  theme(legend.text = element_text(size =9)) +
-    theme(axis.text = element_text(size =9))  +
+    theme(axis.title.x=element_text(size=11)) +
+    theme(axis.title.y=element_text(size=11)) +
+  theme(legend.text = element_text(size =11)) +
+    theme(axis.text = element_text(size =11))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
@@ -405,6 +404,6 @@ ggplot(aes(x=ANO,y=Concluintes)) +
   scale_x_continuous(breaks = seq(2009, 2018, by = 1))+
     theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
 
-ggplotly(objeto,dynamicTicks = TRUE)
+ggplotly(objeto)
 
 ```
