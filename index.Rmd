@@ -314,15 +314,15 @@ Total
 
 ```{r,eval=TRUE}
 
-CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
-  e_charts(x = ANO_CENSO_SUP,width = "100%", height = "200px") %>%
+CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value/1000)) %>% mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>%
+  e_charts(x = ANO_CENSO_SUP) %>%   #,width = "100%", height = "200px") %>%
   e_bar(value,legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
   e_labels(position = "top") %>% 
   e_tooltip() %>% 
   e_title("Sexo Feminino", "Total") %>% 
  # e_flip_coords() %>% 
-  e_y_axis(splitLine = list(show = FALSE),formatter = e_axis_formatter("decimal", locale = "pt")) %>% 
+  e_y_axis(splitLine = list(show = FALSE),formatter = e_axis_formatter("decimal", locale = "pt-br")) %>% 
   #e_x_axis(show = FALSE) %>%
   e_x_axis(show = TRUE) %>%
   e_color(
@@ -332,13 +332,14 @@ CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% 
     feature = "dataView",
     title = "Ver dados"
   ) %>% 
-e_axis_labels(x = "",y= "") %>%
+e_axis_labels(x ="",y= "") %>%
   e_tooltip(trigger="axis",
             axisPointer = list(
               type = "cross"),
             textStyle=list(fontFamily="arial",
                            fontSize=12)) %>%
-  e_toolbox_feature(feature = "dataZoom")
+  e_toolbox_feature(feature = "dataZoom") %>%  
+  e_format_y_axis(suffix = "mil")
 
 
 ```
