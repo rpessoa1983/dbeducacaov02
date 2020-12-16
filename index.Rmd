@@ -315,7 +315,7 @@ Total
 ```{r,eval=TRUE}
 
 CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>% mutate(ANO_CENSO_SUP=as.character(ANO_CENSO_SUP)) %>% 
-  mutate(value = format(value,scientific = TRUE)) %>%
+#  mutate(value = format(value,scientific = TRUE)) %>%
   e_charts(x = ANO_CENSO_SUP) %>%   #,width = "100%", height = "200px") %>%
   e_bar(value,legend = FALSE, name = "Nº Concluintes") %>% 
   #e_labels(position = "right") %>% 
