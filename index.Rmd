@@ -24,6 +24,7 @@ library(extrafont)
 library(gganimate)
 library(ggplotlyExtra)
 library(plotly)
+library(ggplotify)
 
 
 library(echarts4r) # charts
@@ -312,7 +313,7 @@ CONCLUINTES_SSA %>%
 
 Total
 ================================
-```{r, eval=TRUE, fig.height=4, fig.width=3}
+```{r, eval=TRUE, fig.height=3, fig.width=3}
 
 objeto <- CONCLUINTES_SSA %>%  group_by(ANO_CENSO_SUP) %>% summarise(value =sum(value)) %>%
 ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
@@ -323,10 +324,10 @@ ggplot(aes(x=ANO_CENSO_SUP,y=value)) +
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=22)) +
-    theme(axis.title.y=element_text(size=22)) +
-  theme(legend.text = element_text(size = 22)) +
-    theme(axis.text = element_text(size = 22))  +
+    theme(axis.title.x=element_text(size=10)) +
+    theme(axis.title.y=element_text(size=10)) +
+  theme(legend.text = element_text(size = 10)) +
+    theme(axis.text = element_text(size = 10))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
