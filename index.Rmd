@@ -5,10 +5,10 @@ output:
  #   logo: figure/reconhecendosalvador.gif
     css: style.css
     theme: cosmo
-    social: menu
+#    social: menu
     orientation: columns
     vertical_layout: fill
-    source_code: embed
+#    source_code: embed
 ---
 
 
