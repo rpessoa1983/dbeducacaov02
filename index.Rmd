@@ -68,7 +68,7 @@ Preta
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
   ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
@@ -108,7 +108,7 @@ Parda
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
   ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
@@ -148,7 +148,7 @@ Preta+Parda
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
   ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
@@ -188,7 +188,7 @@ objeto <- CONCLUINTES_SSA %>%
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
 ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
@@ -228,7 +228,7 @@ objeto <- CONCLUINTES_SSA %>%
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
 ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
@@ -268,7 +268,7 @@ objeto <- CONCLUINTES_SSA %>%
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
 ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
@@ -306,7 +306,7 @@ NQD
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
 ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
@@ -344,7 +344,7 @@ NDI
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
 ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
@@ -382,7 +382,7 @@ objeto <- CONCLUINTES_SSA %>%
   group_by(ANO) %>% 
   summarise(Concluintes =sum(value)) %>%
 ggplot(aes(x=ANO,y=Concluintes)) +
-  geom_bar(stat = "identity",fill="#00c4cc",color="#fac113") +
+  geom_bar(stat = "identity",fill="#6cbfd3",color="#fac113") +
   labs(
     title = "",
     x = "Ano",
