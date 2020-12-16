@@ -4,6 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     logo: figure/reconhecendosalvador.gif
     css: style.css
+    theme: paper
     social: menu
     orientation: columns
     vertical_layout: fill
