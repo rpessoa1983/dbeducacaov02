@@ -2,7 +2,7 @@
 title: " Ensino Superior - Raça/Cor: "
 output: 
   flexdashboard::flex_dashboard:
-    logo: figure/reconhecendosalvador.gif
+ #   logo: figure/reconhecendosalvador.gif
     css: style.css
     theme: paper
     social: menu
