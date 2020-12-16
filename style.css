@@ -25,3 +25,14 @@
   border-color: yellow;
 }
 
+.child1wide {
+  background-color: yellow;
+  display: flex;
+  margin-left: calc(-37.5vw + 50%);
+  width: 75vw;
+}
+
+.container {
+width: 65%  ;
+padding: 0px 0px 0px 0px;
+}
