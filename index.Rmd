@@ -310,7 +310,7 @@ CONCLUINTES_SSA %>%
 
 Total
 ================================
-### <font size="5"> **Total do Nº de concluintes em ensino superior - Sexo Feminino** </font>
+
 
 
 ```{r,eval=TRUE}
