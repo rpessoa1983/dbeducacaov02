@@ -4,7 +4,7 @@ output:
   flexdashboard::flex_dashboard:
  #   logo: figure/reconhecendosalvador.gif
     css: style.css
-    theme: paper
+    #theme: paper
     social: menu
     orientation: columns
     vertical_layout: fill
@@ -310,8 +310,34 @@ CONCLUINTES_SSA %>%
 
 Total
 ================================
+Column {data-width=300}
+-------------------------------------
+### Concluintes do Sexo Feminino
 
+```{r}
+Sexo_Feminino <- CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("F")) %>% summarise(valor=sum(value))
+valueBox(Sexo_Feminino, icon = "fa-pencil",href="#concluintes-f",
+         color = "#fac113")
+```
 
+### Concluintes do Sexo Masculino
+
+```{r}
+Sexo_Masculino <- CONCLUINTES_SSA %>% filter(TP_SEXO %in% c("M")) %>% summarise(valor=sum(value))
+valueBox(Sexo_Masculino, icon = "fa-pencil", href="#concluintes-m")
+```
+
+### Total de Concluintes
+
+```{r}
+Total <- CONCLUINTES_SSA %>% summarise(valor=sum(value))
+valueBox(Total, 
+         icon = "fa-child",
+         color = ifelse(Total > 3000000, "warning", "#db4470"))
+```
+
+Column {data-width=800}
+-------------------------------------
 
 ```{r,eval=TRUE}
 
