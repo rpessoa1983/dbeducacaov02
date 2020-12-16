@@ -327,10 +327,10 @@ ggplot(aes(x=ANO,y=Concluintes)) +
     y = "Nº"
   ) +
   theme(title = element_text(size = 12,colour = "#db4470"))+
-    theme(axis.title.x=element_text(size=10)) +
-    theme(axis.title.y=element_text(size=10)) +
-  theme(legend.text = element_text(size = 10)) +
-    theme(axis.text = element_text(size = 10))  +
+    theme(axis.title.x=element_text(size=9)) +
+    theme(axis.title.y=element_text(size=9)) +
+  theme(legend.text = element_text(size =9)) +
+    theme(axis.text = element_text(size =9))  +
   theme(legend.position = "none")+
   theme(panel.grid = element_blank(), axis.ticks.y = element_line())+
 #  theme( axis.line = element_line(colour = "darkblue",
